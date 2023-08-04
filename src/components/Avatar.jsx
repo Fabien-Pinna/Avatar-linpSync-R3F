@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.2.10 public/models/avatar.glb -o src/components/Avatar.js
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Model(props) {
+export function Avatar(props) {
   const { nodes, materials } = useGLTF('/models/avatar.glb')
   return (
     <group {...props} dispose={null}>
