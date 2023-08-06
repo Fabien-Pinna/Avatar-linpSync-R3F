@@ -4,7 +4,10 @@ import { useThree } from "@react-three/fiber";
 
 export const Experience = () => {
 
+  // Load background texture
   const texture = useTexture("/textures/background.jpg");
+
+  // Get viewport
   const viewport = useThree((state) => state.viewport);
 
   return (
